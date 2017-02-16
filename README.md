@@ -19,5 +19,7 @@ The following two additional test results are quite interesting. The test data c
 <tr><td>Test2</td><td><img src='images/Test2-inputs.png'></td><td><img src='images/Test2-outputs.png'></td><td><img src='images/Test2-targets.png'></td></tr>
 </table>
 
+For those interested in playing with the data, I have uploaded clean data in the data folder. AB is the combined dataset and test is the testing dataset. You can follow the exact commands as written in the original author's blog.
+
 #Conclusion and ideas
 The network only works when the input and target images are very aligned. I initally were going after other data sources but that project failed miserably. The results of this dataset show me what the capacity and limitation are. After this, I plan to study further and see if I can come up with better discriminator network. 
