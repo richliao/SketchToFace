@@ -22,4 +22,4 @@ The following two additional test results are quite interesting. The test data c
 For those interested in playing with the data, I have uploaded clean data in the sketches folder. You can follow the exact commands as written in the original author's blog.
 
 #Conclusion and ideas
-The network only works when the input and target images are very aligned. I initally were going after other data sources but that project failed miserably. The results of this dataset show me what the capacity and limitation are. After this, I plan to study further and see if I can come up with better discriminator network. 
+The network only works when the input and target images are very aligned. I initally were going after other data sources but that project failed miserably. The results of this dataset showed me what the capacity and limitation of the network are. After this, I plan to study further and see if I can come up with better discriminator network. 
