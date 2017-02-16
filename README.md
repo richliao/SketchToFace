@@ -1,7 +1,7 @@
 # SketchToFace
-The original code for the project comes from [affinelayer's pix2pix tensorflow implementation](https://github.com/affinelayer/pix2pix-tensorflow). His blog has full detail explaination of the architecture in [here](http://affinelayer.com/pix2pix/). I will write my own in the future.
+The original code for the project comes from [Christopher Hesse's pix2pix tensorflow implementation](https://github.com/affinelayer/pix2pix-tensorflow), which translates Phillip Isola's [Torch code](https://phillipi.github.io/pix2pix/) into tensorflow.  Chris has a very detailed explanation of the network in his [blog](http://affinelayer.com/pix2pix/). I have learned a quite deal reading it. 
 
-For this excercise I have only made very minor changes. I have mainly changed the Generative and Discriminator network to take in 64X64 images by removing two layers, so that the size of parameters and time to train the model reduced. The dataset I used comes from [CUHK Face Sketch database](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html). The original resolution of each image is 200X250. I have reduced each to 64X64 and further convert gray image to RBG by using openCV.
+For this excercise I have only made very little changes, primarily changed the Generative and Discriminator network to take in 64X64 images by removing two layers, so that the size of parameters and time to train the model can be reduced. The dataset I used comes from [CUHK Face Sketch database](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html). The original resolution of each image is 200X250. I have reduced each to 64X64 and further convert gray image to RBG by using openCV.
 
 The dataset contains 188 faces and sketches combined. I have trained the model based on 185 data points, leaving following 3 for testing. As you can see results are quite impressive. The model has learned a very good mapping between sketches and faces.
 
@@ -24,4 +24,4 @@ For those interested in playing with the data, I have uploaded clean data in the
 #Conclusion and ideas
 It will make sense to add another one hot label as input, such as Male vs. Female, ethnicity etc so that it can maximize the benefit of conditional adversarial network.
 
-Also, the network only works when the input and target images are very well aligned. I initally were going after other data sources but that project failed miserably. The results of this dataset showed me what the capacity and limitation of the network are. After this, I plan to study further and see if I can come up with better discriminator network. 
+Also, the network only works when the input and target images are very well aligned. I initally were going after other data sources but that project failed miserably. The results of this dataset showed me what the capacity and limitation of the network are. After this, I plan to study further and see if I can come up with better discriminator network. If I have further work done, I'll update this page or you can go to my [blog](richliao.github.io) for further information.
